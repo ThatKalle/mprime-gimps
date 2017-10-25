@@ -43,11 +43,8 @@ CHUID=mprime
 . /lib/lsb/init-functions
 
 do_start() {
-   start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON --test > /dev/null \
-      || return 1
-   start-stop-daemon --start --quiet --chuid $CHUID --pidfile $PIDFILE --exec $DAEMON -- \
-      $DAEMON_ARGS \
-      || return 2
+   start-stop-daemon --start --quiet --pidfile $PIDFILE --exec $DAEMON --test > /dev/null || return 1
+   start-stop-daemon --start --quiet --chuid $CHUID --pidfile $PIDFILE --exec $DAEMON -- $DAEMON_ARGS || return 2
 }
 
 do_stop() {
@@ -90,8 +87,8 @@ case "$1" in
       do_start
       case "$?" in
          0) log_end_msg 0 ;;
-         1) log_end_msg 1 ;; # Old process is still running
-         *) log_end_msg 1 ;; # Failed to start
+         1) log_end_msg 1 ;;
+         *) log_end_msg 1 ;;
       esac
       ;;
      *)

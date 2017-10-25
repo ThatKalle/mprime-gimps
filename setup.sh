@@ -42,10 +42,6 @@ sudo update-rc.d mprime defaults
 wget http://www.mersenne.org/ftp_root/gimps/p95v293.linux64.tar.gz -P /tmp
 sudo -u mprime tar -xvzf /tmp/p95v293.linux64.tar.gz -C /usr/sbin/mprime
 
-# Local Cleanup
-sudo rm /tmp/p95v293.linux64.tar.gz
-sudo rm startmprime mprime setup.sh uninstall.sh
-
 echo "mprime requires manual intervention, proceed with setup. select: 5. Test/Quit when done."
 read -p "Ready? (y/n) " RESP
 if [ "$RESP" = "y" ]; then

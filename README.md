@@ -7,7 +7,7 @@ Have a read over at [Mersenne](https://www.mersenne.org/gettingstarted/) for get
 
 ### Installing
 
-The installation is prepared to be as turn-key as possible to the best of my ability,<br>
+The installation is prepared to be as turn-key as possible to the best of my ability, using [setup.sh](setup.sh).<br>
 ```
 sudo apt-get install git -y
 git clone https://github.com/ThatKalle/mprime-gimps.git
@@ -46,7 +46,7 @@ With the installation complete you'll have a few more folders, scripts, and one 
 
 ### Uninstalling
 
-uninstall.sh has been created to remove what's installed, please note that it's dirty, ie, no pre-checks are done.<br>Use at own risk.<br>
+[uninstall.sh](uninstall.sh) has been created to remove what's installed, please note that it's dirty, ie, no pre-checks are done.<br>Use at own risk.<br>
 ```
 sudo apt-get install git -y
 git clone https://github.com/ThatKalle/mprime-gimps.git

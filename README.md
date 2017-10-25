@@ -59,7 +59,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* [GIMPS](https://www.mersenne.org/)
+* [Mersenne](https://www.mersenne.org/)
 * [CrashM](http://www.mersenneforum.org/showthread.php?t=16827)
 
 

@@ -31,6 +31,7 @@ If desired.
 
 ``sudo /etc/init.d/mprimed {start|stop|restart|force-reload}``<br>
 ``tail -f /var/log/mprime.log``<br>
+``tail -f /usr/sbin/mprime/prime.log``<br>
 ``/usr/sbin/mprime/mprime -s``
 
 ### Environment
@@ -41,7 +42,7 @@ With the installation complete you'll have a few more folders, scripts, and one 
 /etc/init.d/mprimed<br>
 /usr/sbin/mprime/* <br>
 /var/log/mprime.log<br>
-/var/run/mprime.pid<br>
+/var/run/mprimed.pid<br>
 /etc/logrotate.d/mprimed<br>
 
 ### Uninstalling

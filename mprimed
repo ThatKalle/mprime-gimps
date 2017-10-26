@@ -4,7 +4,7 @@ if [ true != "$INIT_D_SCRIPT_SOURCED" ] ; then
     set "$0" "$@"; INIT_D_SCRIPT_SOURCED=true . /lib/init/init-d-script
 fi
 ### BEGIN INIT INFO
-# Provides:          mprime
+# Provides:          mprimed
 # Required-Start:    $local_fs $remote_fs 
 # Required-Stop:     $local_fs $remote_fs 
 # Should-Start:      $network
@@ -23,7 +23,7 @@ fi
 
 PATH=/sbin:/usr/sbin:/usr/sbin/mprime:/bin:/usr/bin
 DESC="Mersenne MPrime Daemon"
-NAME=mprime
+NAME=mprimed
 DAEMON=/usr/sbin/mprime/startmprime
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME

@@ -2,21 +2,24 @@
 set -uo pipefail
 IFS=$'\n\t'
 
-# Description:       Uninstall Mersenne mprime software as a daemon.
+# Description:       Uninstall Mersenne mprime software.
 
 # Author: Kalle Lilja
 #
 
-# Stop Service
+# Stop service
 sudo /etc/init.d/mprimed stop
 sudo killall mprime
 
-# Remove Daemon
+# Remove daemon
 sudo rm /etc/init.d/mprimed
-sudo rm -r /usr/sbin/mprime
-sudo rm /var/log/mprime.log*
 sudo rm /var/run/mprime.pid
-sudo rm /etc/logrotate.d/mprimed
-sudo rm /tmp/p95v293.linux64.tar.gz
+sudo rm -r /usr/sbin/mprime
 sudo update-rc.d -f mprimed remove
+# Remove logging
+sudo rm /var/log/mprime.log*
+sudo rm /etc/logrotate.d/mprimed
+# Remove tmp setup
+sudo rm /tmp/p95v293.linux64.tar.gz
+# Remove user
 sudo userdel mprime

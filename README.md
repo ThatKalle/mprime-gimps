@@ -29,7 +29,7 @@ If desired.
 
 ## Running
 
-``sudo /etc/init.d/mprime {start|stop|status|restart|force-reload}``<br>
+``sudo /etc/init.d/mprimed {start|stop|restart|force-reload}``<br>
 ``tail -f /var/log/mprime.log``<br>
 ``/usr/sbin/mprime/mprime -s``
 
@@ -38,11 +38,11 @@ If desired.
 With the installation complete you'll have a few more folders, scripts, and one more user account on the machine.<br>
 **User account:** mprime<br>
 **Files/Folders:**<br>
-/etc/init.d/mprime<br>
+/etc/init.d/mprimed<br>
 /usr/sbin/mprime/* <br>
 /var/log/mprime.log<br>
 /var/run/mprime.pid<br>
-/etc/logrotate.d/mprime<br>
+/etc/logrotate.d/mprimed<br>
 
 ### Uninstalling
 

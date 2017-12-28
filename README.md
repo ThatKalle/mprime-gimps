@@ -9,7 +9,7 @@ Have a read over at [Mersenne](https://www.mersenne.org/gettingstarted/) for get
 
 The installation is prepared to be as turn-key as possible to the best of my ability, using [setup.sh](setup.sh).<br>
 ```
-sudo apt-get install git -y
+sudo apt-get install git wget -y
 git clone https://github.com/ThatKalle/mprime-gimps.git
 cd mprime-gimps/
 sudo chmod a+x setup.sh
@@ -29,7 +29,7 @@ If desired.
 
 ## Running
 
-``sudo /etc/init.d/mprimed {start|stop|restart|force-reload}``<br>
+``sudo /etc/init.d/mprimed {start|stop|restart|status|force-reload}``<br>
 ``tail -f /var/log/mprime.log``<br>
 ``tail -f /usr/sbin/mprime/prime.log``<br>
 ``/usr/sbin/mprime/mprime -s``
@@ -54,6 +54,7 @@ git clone https://github.com/ThatKalle/mprime-gimps.git
 cd mprime-gimps/
 sudo chmod a+x uninstall.sh
 sudo ./uninstall.sh
+sudo apt-get remove git wget -y
 ```
 
 ## License

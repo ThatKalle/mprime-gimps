@@ -1,5 +1,6 @@
 # mprime-gimps
-Run [Mersenne](https://www.mersenne.org/) GIMPS Prime95 client -mprime- as a service/daemon on Debian Linux.
+Run [Mersenne](https://www.mersenne.org/) GIMPS Prime95 client -mprime- as a service/daemon on Debian Linux.<br>
+* Please read the [related post](https://kallelilja.com/2017/12/install-mersenne-gimps-daemon/) for additional information.
 
 ## Getting Started
 

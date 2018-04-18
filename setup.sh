@@ -31,7 +31,7 @@ sudo touch /var/log/mprime.log
 sudo chown mprime:mprime /var/log/mprime.log
 # Logrotate
 sudo touch /etc/logrotate.d/mprimed
-echo -e '/var/log/mprime.log {\nrotate7\ndaily\nmissingok\nnotifempty\ncompress\ndelaycompress\ncopytruncate\n}' | sudo tee -a /etc/logrotate.d/mprimed
+echo -e '/var/log/mprime.log {\nrotate 7\ndaily\nmissingok\nnotifempty\ncompress\ndelaycompress\ncopytruncate\n}' | sudo tee -a /etc/logrotate.d/mprimed
 
 # Setup init.d daemon
 sudo cp ./mprimed /etc/init.d/mprimed
